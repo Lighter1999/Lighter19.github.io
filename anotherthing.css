@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    margin-top: 50px;
+    border-radius: 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+p {
+    overflow: hidden;
+    font-size: 1rem;
+    font-family: 'Chalkduster', sans-serif;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    min-height: 10vh;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    color: white;
+    
+}
+
+ul.transition {
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    pointer-events: none;
+}
+
+ul.transition li {
+    transform: scaleY(0);
+    background: rgb(223, 214, 214);
+    width: 20%;
+}
+
+ul.transition li.one {
+    transform: scaleY(0);
+    background: rgb(18, 190, 33);
+    width: 20%;
+}
+ul.transition li.two {
+    transform: scaleY(0);
+    background: rgb(52, 13, 124);
+    width: 20%;
+}ul.transition li.three {
+    transform: scaleY(0);
+    background: rgb(82, 11, 78);
+    width: 20%;
+}ul.transition li.four {
+    transform: scaleY(0);
+    background: rgb(20, 6, 102);
+    width: 20%;
+}ul.transition li.five {
+    transform: scaleY(0);
+    background: rgb(5, 79, 139);
+    width: 20%;
+}
+
+.cta {
+    background: lightblue;
+}
